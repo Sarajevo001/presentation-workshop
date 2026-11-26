@@ -60,9 +60,18 @@ node tests/target-contracts.cjs
 - [章間連続性CI](https://github.com/Sarajevo001/oop-rpg-workshop/actions/runs/45389049256)：3組×3ファイル。
 - [統合安全性CI](https://github.com/Sarajevo001/oop-rpg-workshop/actions/runs/45389049321)。
 - [公開・検証完了記録](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f728202071cc3e8827c4099e2ab5e8f6cbe21f52/docs/shared_materials_release_validation_2026-11-24.md)：公開HTTP99ファイルの一致、代表実JSFiddle・公開操作3項目。
-- 公開版は実際に動作確認したコードであり、規約全条項への準拠証明ではない。Playwright新規導入の承認証跡・継続利用は [Issue #6](https://github.com/Sarajevo001/oop-rpg-workshop/issues/6) で確認中。
+- 公開版は実際に動作確認したコードであり、規約全条項への準拠証明ではない。Playwright 1.56.1 / Chromium の継続利用は2026-11-25に承認済み（[Issue #6](https://github.com/Sarajevo001/oop-rpg-workshop/issues/6)）。新規導入時の事前承認証跡、保守・セキュリティ・ライセンスの詳細確認は未完了。新規依存や版変更の包括承認ではない。
 - 実際のVSCode Go Live本体、OS固有フォルダ選択ダイアログの詳細、実JSFiddleの他17ステージ手動確認は未確認。相当環境と代表検証を区別する。自動保存テストはOPFSへの保存である。
 
 ## 5. 更新方針
 
 本一覧の固定SHAを変更する場合は、新たな参照版の変更内容と検証証跡を確認し、変更理由を記録する。参照コードの機械的複製・改変版の無検証採用を行わない。
+
+## 6. 講座入口の分離と素材掲載の追加参照例（2026-11-27登録）
+
+既存のv1.0固定参照版は変更しない。以下は別の後続版の追加参照例であり、旧版の公開99ファイル一致を新しい版の証跡として扱わない。
+
+- 対象SHA: `f2dfad330c05e071a55236a0d616a3f81c71ad59`（RPG講座）。[講義入口](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f2dfad330c05e071a55236a0d616a3f81c71ad59/src/public/index.html)、[教材一覧](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f2dfad330c05e071a55236a0d616a3f81c71ad59/src/public/materials.html)、[看板PNG](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f2dfad330c05e071a55236a0d616a3f81c71ad59/src/public/assets/xo-code-busters-banner.png)、[総まとめ](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f2dfad330c05e071a55236a0d616a3f81c71ad59/src/public/presentations/summary/index.html)、[ブラウザ検査](https://github.com/Sarajevo001/oop-rpg-workshop/blob/f2dfad330c05e071a55236a0d616a3f81c71ad59/tests/browser-materials.cjs)。
+- 統合後CI: [表示・操作・教材検証](https://github.com/Sarajevo001/oop-rpg-workshop/actions/runs/45828155079)、[章間検証](https://github.com/Sarajevo001/oop-rpg-workshop/actions/runs/45828155162)、[統合検証](https://github.com/Sarajevo001/oop-rpg-workshop/actions/runs/45828155127) は合格。PC・狭幅表示の検査と看板の原本一致検査を含む。
+- 共通玄関は公開基盤側の [XO-Code Bustersの固定参照版](https://github.com/Sarajevo001/xo-code-busters/blob/30ae57aa8cd30f2150c73e7aa31da36f55d2734f/src/public/demo-portal/index.html)。RPGの配備定義を変更せず、XO側でルートを追加した。[統合後CI](https://github.com/Sarajevo001/xo-code-busters/actions/runs/45832165655) は合格。
+- 2026-11-26、作成者のVPS実行ログでCaddy設定の検証・適用成功を確認。ユーザーの実ブラウザ画面で共通玄関・講座トップ・看板の表示と遷移を確認。2026-11-27、ユーザーが全編確認の上、教材制作をいったん完成と判断。新しい版の公開HTTP全ファイル比較、全非公開パスの拒否確認、講座所要時間の実測はこの証跡では確認していない。

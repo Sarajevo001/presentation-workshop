@@ -4,7 +4,7 @@
 
 ## 制作ガイドライン
 
-- [プレゼン工房 制作ガイドライン v1.5](guidelines/presentation_workshop_guidelines.md)
+- [プレゼン工房 制作ガイドライン v1.7](guidelines/presentation_workshop_guidelines.md)
 - [実演・演習用HTML教材 技術標準 v1.0](guidelines/interactive_html_materials.md)
 - [共通実行環境の検証済み参照実装](references/interactive-html/reference-implementation.md)
 - 基本原則：**作り方を固定するのではなく、作り方を選択するための判断基準を固定する。**
